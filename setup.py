@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from setuptools import setup, find_packages
+from setuptools import setup
 import os
 
 
@@ -21,7 +21,7 @@ setup(name = 'zarr-jpeg2k',
       maintainer_email = None,
       url = 'https://github.com/glencoesoftware/zarr-jpeg2k',
       package_dir = {'': 'src'},
-      packages = find_packages(),
+      packages = ['zarr_jpeg2k'],
       package_data = {'': ['*']},
       install_requires = [
           'imagecodecs==2020.1.31',
