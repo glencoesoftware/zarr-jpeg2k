@@ -50,7 +50,7 @@ import subprocess
 import sys
 
 
-RELEASE_VERSION_FILE = 'zarr-jpeg2k/version.py'
+RELEASE_VERSION_FILE = 'zarr_jpeg2k/version.py'
 
 # http://www.python.org/dev/peps/pep-0386/
 _PEP386_SHORT_VERSION_RE = r'\d+(?:\.\d+)+(?:(?:[abc]|rc)\d+(?:\.\d+)*)?'
