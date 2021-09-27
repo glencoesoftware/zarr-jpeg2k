@@ -75,4 +75,4 @@ dmypy.json
 .vscode/settings.json
 
 # Other
-isyntax2raw/version.py
+zarr_jpeg2k/version.py
