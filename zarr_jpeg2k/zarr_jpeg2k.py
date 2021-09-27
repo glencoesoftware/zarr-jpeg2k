@@ -15,6 +15,7 @@ from numcodecs.registry import register_codec
 import imagecodecs
 import numpy as np
 
+
 class jpeg2k(Codec):
     """Codec providing jpeg2k compression via imagecodecs.
     Parameters
@@ -35,14 +36,14 @@ class jpeg2k(Codec):
         return imagecodecs.jpeg2k_encode(np.squeeze(buf), level=self.level)
 
     def decode(self, buf, out=None):
-            buf = ensure_bytes(buf)
-            decoded = imagecodecs.jpeg2k_decode(buf)
-            if out is not None:
-                out_view = ensure_contiguous_ndarray(out)
-                ndarray_copy(decoded, out_view)
-            else:
-                out = decoded
-            return out
+        buf = ensure_bytes(buf)
+        decoded = imagecodecs.jpeg2k_decode(buf)
+        if out is not None:
+            out_view = ensure_contiguous_ndarray(out)
+            ndarray_copy(decoded, out_view)
+        else:
+            out = decoded
+        return out
 
 
 register_codec(jpeg2k)

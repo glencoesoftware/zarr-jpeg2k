@@ -20,20 +20,21 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 
-setup(name = 'zarr-jpeg2k',
-      version = version.getVersion(),
-      description = 'JPEG-2000 Compression for zarr chunks',
-      long_description = read('README.md'),
-      long_description_content_type='text/markdown',
-      author = 'Glencoe Software, Inc.',
-      author_email = 'info@glencoesoftware.com',
-      maintainer = None,
-      maintainer_email = None,
-      url = 'https://github.com/glencoesoftware/zarr-jpeg2k',
-      install_requires = [
-          'imagecodecs==2021.8.26',
-          'numcodecs==0.9.1',
-          'numpy>=1.15'
-      ],
-      python_requires = '>=3.7'
+setup(
+    name='zarr-jpeg2k',
+    version=version.getVersion(),
+    description='JPEG-2000 Compression for zarr chunks',
+    long_description=read('README.md'),
+    long_description_content_type='text/markdown',
+    author='Glencoe Software, Inc.',
+    author_email='info@glencoesoftware.com',
+    maintainer=None,
+    maintainer_email=None,
+    url='https://github.com/glencoesoftware/zarr-jpeg2k',
+    install_requires=[
+        'imagecodecs==2021.8.26',
+        'numcodecs==0.9.1',
+        'numpy>=1.15'
+    ],
+    python_requires='>=3.7'
     )
