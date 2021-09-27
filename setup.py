@@ -24,9 +24,9 @@ setup(name = 'zarr-jpeg2k',
       packages = ['zarr_jpeg2k'],
       package_data = {'': ['*']},
       install_requires = [
-          'imagecodecs==2020.1.31',
+          'imagecodecs==2021.8.26',
           'numcodecs==0.9.1',
           'numpy>=1.15'
       ],
-      python_requires = '>=3.6'
+      python_requires = '>=3.7'
     )
