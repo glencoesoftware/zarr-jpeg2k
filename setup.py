@@ -9,6 +9,8 @@
 from setuptools import setup
 import os
 
+import version
+
 
 def read(fname):
     """
@@ -19,9 +21,10 @@ def read(fname):
 
 
 setup(name = 'zarr-jpeg2k',
-      version = '0.1.0',
+      version = version.getVersion(),
       description = 'JPEG-2000 Compression for zarr chunks',
       long_description = read('README.md'),
+      long_description_content_type='text/markdown',
       author = 'Glencoe Software, Inc.',
       author_email = 'info@glencoesoftware.com',
       maintainer = None,

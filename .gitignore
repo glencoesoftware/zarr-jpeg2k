@@ -74,4 +74,5 @@ dmypy.json
 .pyre/
 .vscode/settings.json
 
-
+# Other
+isyntax2raw/version.py
