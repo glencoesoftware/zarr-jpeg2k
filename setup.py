@@ -1,4 +1,11 @@
 # -*- coding: utf-8 -*-
+#
+# Copyright (c) 2021 Glencoe Software, Inc. All rights reserved.
+#
+# This software is distributed under the terms described by the LICENSE.txt
+# file you can find at the root of the distribution bundle.  If the file is
+# missing please request a copy by contacting info@glencoesoftware.com
+
 from setuptools import setup
 import os
 
@@ -20,9 +27,6 @@ setup(name = 'zarr-jpeg2k',
       maintainer = None,
       maintainer_email = None,
       url = 'https://github.com/glencoesoftware/zarr-jpeg2k',
-      package_dir = {'': 'src'},
-      packages = ['zarr_jpeg2k'],
-      package_data = {'': ['*']},
       install_requires = [
           'imagecodecs==2021.8.26',
           'numcodecs==0.9.1',
