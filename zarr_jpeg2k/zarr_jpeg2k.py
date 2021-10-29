@@ -21,7 +21,9 @@ class jpeg2k(Codec):
     Parameters
     ----------
     level : int
-        Compression peak signal noise ratio.
+        Compression level defined by imagecodecs. Relates to peak
+        signal-to-noise ratio (PSNR). May need to be the reverse of PSNR
+        (eg. 40 PSNR = compression level 60 | 90 PSNR = compression level 10).
     """
 
     codec_id = "jpeg2k"

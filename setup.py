@@ -6,7 +6,7 @@
 # file you can find at the root of the distribution bundle.  If the file is
 # missing please request a copy by contacting info@glencoesoftware.com
 
-from setuptools import setup
+from setuptools import setup, find_packages
 import os
 
 import version
@@ -31,6 +31,7 @@ setup(
     maintainer=None,
     maintainer_email=None,
     url='https://github.com/glencoesoftware/zarr-jpeg2k',
+    packages=find_packages(),
     install_requires=[
         'imagecodecs==2021.8.26',
         'numcodecs==0.9.1',
